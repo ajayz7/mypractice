@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="XBE-Dk-wxy">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--My Friends List-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Friends" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="T7T-d9-ylk">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="customcell" rowHeight="121" id="fsI-JW-EBs" customClass="Customcell" customModule="Friends" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="121"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="fsI-JW-EBs" id="jfg-SG-fmt">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="121"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="J1p-UL-pfo">
+                                                    <rect key="frame" x="5" y="5" width="404" height="111"/>
+                                                    <subviews>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Prerna.png" translatesAutoresizingMaskIntoConstraints="NO" id="qIr-7B-V6r">
+                                                            <rect key="frame" x="8" y="5" width="102" height="101"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="60" id="7Cl-fM-Vsp"/>
+                                                                <constraint firstAttribute="height" constant="60" id="VPR-Ws-9hM"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Prerna" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ddn-Nb-hwd">
+                                                            <rect key="frame" x="141" y="5" width="258" height="101"/>
+                                                            <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="15"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstItem="qIr-7B-V6r" firstAttribute="leading" secondItem="J1p-UL-pfo" secondAttribute="leading" constant="8" id="7CD-tH-BFG"/>
+                                                        <constraint firstAttribute="bottom" secondItem="ddn-Nb-hwd" secondAttribute="bottom" constant="5" id="9g3-Kr-OoI"/>
+                                                        <constraint firstItem="ddn-Nb-hwd" firstAttribute="top" secondItem="J1p-UL-pfo" secondAttribute="top" constant="5" id="H2m-Eb-w7J"/>
+                                                        <constraint firstAttribute="trailing" secondItem="ddn-Nb-hwd" secondAttribute="trailing" constant="8" id="Oqz-of-pme"/>
+                                                        <constraint firstItem="ddn-Nb-hwd" firstAttribute="bottom" secondItem="qIr-7B-V6r" secondAttribute="bottom" id="T0H-aN-EbE"/>
+                                                        <constraint firstAttribute="trailing" secondItem="ddn-Nb-hwd" secondAttribute="trailing" constant="5" id="UVU-Xk-LLH"/>
+                                                        <constraint firstItem="ddn-Nb-hwd" firstAttribute="leading" secondItem="qIr-7B-V6r" secondAttribute="trailing" constant="196" id="VtX-8R-4gL"/>
+                                                        <constraint firstItem="ddn-Nb-hwd" firstAttribute="top" secondItem="qIr-7B-V6r" secondAttribute="top" id="liv-Rr-eoZ"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="J1p-UL-pfo" firstAttribute="leading" secondItem="jfg-SG-fmt" secondAttribute="leading" constant="5" id="7ol-ty-niH"/>
+                                                <constraint firstAttribute="bottom" secondItem="J1p-UL-pfo" secondAttribute="bottom" constant="5" id="SlD-j2-8KV"/>
+                                                <constraint firstItem="J1p-UL-pfo" firstAttribute="top" secondItem="jfg-SG-fmt" secondAttribute="top" constant="5" id="b1w-bK-gXf"/>
+                                                <constraint firstAttribute="trailing" secondItem="J1p-UL-pfo" secondAttribute="trailing" constant="5" id="wbV-iI-NYA"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="avatarimg" destination="qIr-7B-V6r" id="fwx-gD-lUr"/>
+                                            <outlet property="friendview" destination="jfg-SG-fmt" id="hq7-Iu-Lrw"/>
+                                            <outlet property="namelbl" destination="ddn-Nb-hwd" id="B2L-Ft-lgm"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="T7T-d9-ylk" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Dxb-He-GVU"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="T7T-d9-ylk" secondAttribute="trailing" id="HRy-4y-5ij"/>
+                            <constraint firstItem="T7T-d9-ylk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="adV-5P-Rld"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="T7T-d9-ylk" secondAttribute="bottom" id="wUo-TT-eSP"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="My Friends List" id="Zyc-Gg-JzB"/>
+                    <connections>
+                        <outlet property="friendview" destination="T7T-d9-ylk" id="I0e-6K-CTp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1047.8260869565217" y="114.50892857142857"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="DIp-jb-PZF">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="XBE-Dk-wxy" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="uCS-yc-Y75">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Kd7-di-1JD"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IvG-xE-WL0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="114.50892857142857"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Prerna.png" width="512" height="512"/>
+    </resources>
+</document>
